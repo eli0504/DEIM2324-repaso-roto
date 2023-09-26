@@ -7,7 +7,7 @@ using TMPro;
 
 public class UIManagerOptions : MonoBehaviour
 { 
-    public static UIManagerMainMenu sharedInstance;
+    public static UIManagerOptions sharedInstance;
     
     public static string PLAYER_USERNAME = "playerUsername";
 
@@ -18,6 +18,8 @@ public class UIManagerOptions : MonoBehaviour
 
     [SerializeField] private Slider musicSlider;
     [SerializeField] private Slider sfxSlider;
+
+   
 
     private void Awake()
     {
@@ -44,6 +46,8 @@ public class UIManagerOptions : MonoBehaviour
         
         // Configuramos el volumen de la música y los sfx
         ShowMusicAndSFXVolume();
+
+     
     }
 
     public void ChangeShape(int playerShape)

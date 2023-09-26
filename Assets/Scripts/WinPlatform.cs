@@ -4,7 +4,7 @@ public class WinPlatform : MonoBehaviour
 {
    [SerializeField] private GameObject winPanel;
 
-   private void OnCollisionEnter(Collider other)
+   private void OnTriggerEnter(Collider other)
    {
       // Si el player colisiona con la win platform
       if (other.gameObject.CompareTag("Enemy"))

@@ -17,7 +17,7 @@ public class MusicManager : MonoBehaviour
 
     private void Start()
     {
-        setMusicVolume();
+        SetMusicVolume();
         SetSFXVolume();
     }
 

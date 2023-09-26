@@ -51,7 +51,7 @@ public class PlayerController : MonoBehaviour
         // Rotamos con el eje horizontal
         transform.Rotate(Vector3.up * rotationSpeed * Time.deltaTime * verticalInput);
         // Movemos con el eje vertical
-        Translate(Vector3.forward * movementSpeed * Time.deltaTime * verticalInput);
+        transform.Translate(Vector3.forward * movementSpeed * Time.deltaTime * verticalInput);
     }
 
     public void ChangeMovementLimits(float left, float right, float forward, float back)

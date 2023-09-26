@@ -13,7 +13,7 @@ public class UnlockFloor : MonoBehaviour
 
     private void Update()
     {
-        unlockInput = Input.GetKeyDown(KeyCode.Space);
+       bool unlockInput = Input.GetKeyDown(KeyCode.Space);
     }
 
     private void OnTriggerEnter(Collider other)
@@ -29,7 +29,7 @@ public class UnlockFloor : MonoBehaviour
     {
         // Si el Player entra está en el trigger, el suelo no está desbloqueado y pulsamos E,
         // desbloqueamos el suelo, ocultamos el panel y paramos el sistema de partículas
-        if (other.gameObject.CompareTag("Player") && !floorToUnlock.activeInHierarchy && unlockInput)
+        if (other.gameObject.CompareTag("Player") && !floorToUnlock.activeInHierarchy && Input.GetKeyDown(KeyCode.E))
         {
             floorToUnlock.SetActive(true);
             UIManager.sharedInstance.HidePressEKeyPanel();

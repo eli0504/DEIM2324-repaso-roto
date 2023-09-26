@@ -64,6 +64,6 @@ public class PlayerVisuals : MonoBehaviour
             playerColor = 1;
         }
 
-        PlayerMaterial.color = DataPersistence.sharedInstance.playerColors[playerColor];
+        playerMaterial.color = DataPersistence.sharedInstance.playerColors[playerColor];
     }
 }

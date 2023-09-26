@@ -6,7 +6,7 @@ using UnityEngine;
 public class DataPersistence : MonoBehaviour
 {
     public static DataPersistence sharedInstance;
-    private Color[] playerColors;
+    public Color[] playerColors;
     private void Awake()
     {
         if (sharedInstance == null)

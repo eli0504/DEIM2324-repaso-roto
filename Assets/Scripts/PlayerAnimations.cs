@@ -10,12 +10,12 @@ public class PlayerAnimations : MonoBehaviour
 
    private void Awake()
    {
-      _animator = GetComponent<Animator>;
+      _animator = GetComponent<Animator>();
    }
 
    public void Attack()
    {
-      _animator.SetBool("Attack");
+      _animator.SetTrigger("Attack");
    }
    
    public void Idle()
